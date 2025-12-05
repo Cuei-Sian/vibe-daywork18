@@ -44,6 +44,20 @@
         border-bottom: 2px solid #444;
       }
 
+      /* Logo 樣式 */
+      .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 10px;
+      }
+
+      .logo-svg {
+        width: 80px;
+        height: 80px;
+      }
+
       h1 {
         font-family: "Orbitron", sans-serif;
         color: var(--metal-light);
@@ -179,7 +193,111 @@
   <body>
     <div class="container">
       <header>
-        <h1>脆脆的 3C 館</h1>
+        <div class="logo-container">
+          <svg
+            class="logo-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 400 400"
+          >
+            <!-- 背景圓形 -->
+            <circle
+              cx="200"
+              cy="200"
+              r="180"
+              fill="none"
+              stroke="#00D9FF"
+              stroke-width="6"
+            />
+
+            <!-- 科技感六邊形框架 -->
+            <polygon
+              points="200,80 260,120 260,200 200,240 140,200 140,120"
+              fill="none"
+              stroke="#00D9FF"
+              stroke-width="2.5"
+            />
+
+            <!-- 中央電路板圖案 -->
+            <path
+              d="M 180,140 L 180,120 L 200,120 L 200,100 M 200,120 L 220,120 L 220,140"
+              stroke="#00D9FF"
+              stroke-width="2"
+              fill="none"
+            />
+            <circle cx="180" cy="140" r="4" fill="#00D9FF" />
+            <circle cx="220" cy="140" r="4" fill="#00D9FF" />
+            <circle cx="200" cy="100" r="4" fill="#00D9FF" />
+
+            <!-- 3C 符號 - 簡約設計 -->
+            <text
+              x="200"
+              y="180"
+              font-family="Arial, sans-serif"
+              font-size="48"
+              font-weight="bold"
+              fill="#00D9FF"
+              text-anchor="middle"
+            >
+              3C
+            </text>
+
+            <!-- FUTURE 文字 -->
+            <text
+              x="200"
+              y="270"
+              font-family="Arial, sans-serif"
+              font-size="32"
+              font-weight="bold"
+              fill="#00D9FF"
+              text-anchor="middle"
+              letter-spacing="4"
+            >
+              FUTURE
+            </text>
+
+            <!-- 裝飾性科技線條 -->
+            <line
+              x1="120"
+              y1="200"
+              x2="100"
+              y2="200"
+              stroke="#00D9FF"
+              stroke-width="2"
+            />
+            <line
+              x1="280"
+              y1="200"
+              x2="300"
+              y2="200"
+              stroke="#00D9FF"
+              stroke-width="2"
+            />
+            <circle cx="100" cy="200" r="3" fill="#00D9FF" />
+            <circle cx="300" cy="200" r="3" fill="#00D9FF" />
+
+            <!-- 底部副標或裝飾 -->
+            <line
+              x1="140"
+              y1="290"
+              x2="260"
+              y2="290"
+              stroke="#00D9FF"
+              stroke-width="1.5"
+            />
+            <text
+              x="200"
+              y="315"
+              font-family="Arial, sans-serif"
+              font-size="12"
+              fill="#00D9FF"
+              text-anchor="middle"
+              letter-spacing="2"
+            >
+              TECHNOLOGY STORE
+            </text>
+          </svg>
+          <h1>脆脆的 3C 館</h1>
+        </div>
       </header>
 
       <div class="filter-bar">
